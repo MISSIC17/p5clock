@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: grid;
+  place-items: center;
+}
+canvas {
+  display: block;
+}
+.time-digital {
+  position: absolute;
+  height: 10em;
+  width: 10em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.time-digital > span {
+  font-size: clamp(2.5em, calc(2.5em + 1vw), 4em);
+  font-family: "Roboto Mono", monospace;
+  padding: 0 0.6em;
+}
+@media only screen and (max-width: 450px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    background: white;
+  }
+}
